@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bird Flocking Animation</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <canvas class="canvas1" id="canvas1"> </canvas>
+      <div class="controls">
+        <div class="cohesion">
+          <label for="cohesionSlider">Cohesion</label>
+          <input
+            id="cohesionSlider"
+            type="range"
+            min="0"
+            max="5"
+            value="1"
+            step="0.1"
+          />
+        </div>
+
+        <div class="cohesion">
+          <label for="alignSlider">Alignment</label>
+          <input
+            id="alignSlider"
+            type="range"
+            min="0"
+            max="5"
+            value="1"
+            step="0.1"
+          />
+        </div>
+
+        <div class="cohesion">
+          <label for="separationSlider">Separation</label>
+          <input
+            id="separationSlider"
+            type="range"
+            min="0"
+            max="5"
+            value="1"
+            step="0.1"
+          />
+        </div>
+      </div>
+    </div>
+
+    <script src="boid.js"></script>
+    <script src="utilities.js"></script>
+    <script src="vector.js"></script>
+    <script src="index.js"></script>
+  </body>
+</html>
