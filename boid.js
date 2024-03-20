@@ -7,7 +7,7 @@ class Boid {
     this.vel = Vector.random2D();
     this.vel.setMag(randomIntFromRange(2, 4));
     this.acc = new Vector(0, 0);
-    this.radius = 5;
+    this.radius = 3;
     this.maxForce = 1;
     this.maxSpeed = 4;
   }
