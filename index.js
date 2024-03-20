@@ -12,7 +12,7 @@ canvas.width = 600;
 canvas.height = 600;
 const flock = [];
 
-for (let i = 0; i < 500; i++) {
+for (let i = 0; i < 300; i++) {
   flock.push(new Boid());
 }
 

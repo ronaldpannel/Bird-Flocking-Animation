@@ -8,11 +8,11 @@ class Boid {
     this.vel.setMag(randomIntFromRange(2, 4));
     this.acc = new Vector(0, 0);
     this.radius = 3;
-    this.maxForce = 1;
-    this.maxSpeed = 4;
+    this.maxForce = 0.2;
+    this.maxSpeed = 5;
   }
   align(boids) {
-    let perceptionRadius = 50;
+    let perceptionRadius = 25;
     let steering = new Vector(0, 0);
     let total = 0;
     for (let other of boids) {
@@ -52,7 +52,7 @@ class Boid {
     return steering;
   }
   separation(boids) {
-    let perceptionRadius = 50;
+    let perceptionRadius = 24;
     let steering = new Vector(0, 0);
     let total = 0;
     for (let other of boids) {
